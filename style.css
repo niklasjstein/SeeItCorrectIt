@@ -120,7 +120,6 @@ li a{
     text-align: center;
     width: auto;
     flex-wrap: wrap;
-    margin-bottom: 5%;
 }
 
 .studiesName:hover{
@@ -340,6 +339,10 @@ ul li:hover{
     .studies .studiesName{
         margin: 25px;
         position: relative; 
+    }
+
+    .StudyImg{
+        padding-top: 10px;
     }
 
     li a{
