@@ -111,7 +111,7 @@ li a{
 }
 
 .wrapper{
-    margin-top: 0;
+    margin-top: 5%;
 }
 
 .studies{
@@ -333,12 +333,12 @@ ul li:hover{
 @media only screen and (max-width: 550px){
 
     .heading2{
-        margin-bottom: 110px;
+        margin-bottom: 40px;
     }
 
 
     .studies .studiesName{
-        margin: 0;
+        margin: 25px;
         position: relative; 
     }
 
