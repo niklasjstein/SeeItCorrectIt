@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Her er NAV-baren */
+
+.navbar{   
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 4px 8px;
+    letter-spacing: 3px;    
+    opacity: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.navigationButtons{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.navigationButtons a{
+    text-decoration: none;
+    color: black;
+}
+
+li a{
+    font-size: 32pt;
+}
+
+.navigationButtons li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Slutten av NAV-baren */
+
+
+
+
+
+/* Her kommer informasjonen om skolen + et bakgrunnsbilde */
+
+.container{
+    min-height: 610px;
+}
+
+.background{
+    width: 100%;
+    opacity: 100%;
+    filter: blur(4px);
+    height: 610px;
+}
+
+.introduction{
+    position: sticky;
+    left: 17%;
+    line-height: 2;
+    margin-top: -500px;
+    margin-left: 120px;
+    margin-right: 40%;
+}
+
+.heading1{
+    color: white;
+    font-size: 32pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.introductionParagraph{
+    color: white;
+    font-size: 22pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* Her kommer listen over studiene */
+.heading2{
+    color: black    ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32pt;
+    padding-top: 2%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.wrapper{
+    margin-top: 0;
+}
+
+.studies{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.studies a{
+    text-decoration: none;
+    color: black;
+}
+
+.studies .studiesName{
+    margin: 125px;
+    position: relative; 
+}
+
+.StudyImg{
+    padding-top: 20px;
+}
+
+.StudyImg:hover{
+    text-decoration: underline;
+}
+
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22pt;
+}
+
+h3:hover{
+    text-decoration: underline;
+}
+
+
+/* Her kommer Meny-siden */
+
+.menuContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoMenu{
+    height: 150px;
+    width: 150px;
+}
+
+.closingIcon a{
+    text-decoration: none;
+    color: black;
+    font-size: 22pt;      
+}
+
+.closingIcon:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+ul li{
+    list-style: none;
+}
+
+.menuOptions{
+    padding-left: 220px;
+    margin-top: 5%;
+    line-height: 1.8;
+    color: black;
+    list-style: none;
+}
+
+ul li:hover{
+    font-weight: bold;
+    text-decoration: underline;   
+}
+
+.menuLinks a{
+    font-size: 32pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;  
+}
+
+
+/* Her er sidene om studiene */
+
+.studyContainer{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 2;
+    text-align: center;
+}
+
+.heading3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22pt;
+}
+
+.paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+
+
+@media only screen and (max-width: 1300px){
+
+    .menuOptions{
+        padding-left: 190px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    .menuOptions{
+        padding-left: 170px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+
+    .menuOptions{
+        padding-left: 150px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
+
+    .introduction{
+        position: sticky;
+        left: 17%;
+        line-height: 2;
+        margin-top: -500px;
+        margin-left: 80px;
+        margin-right: 20%;
+    }
+
+    .menuOptions{
+        padding-left: 140px;
+    }   
+}
+
+
+@media only screen and (max-width: 900px){
+    
+    .menuOptions{
+        padding-left: 130px;
+    }  
+}
+
+
+@media only screen and (max-width: 850px){
+
+    .introduction{
+        position: sticky;
+        left: 17%;
+        line-height: 2;
+        margin-top: -500px;
+        margin-left: 60px;
+        margin-right: 10%;
+    }
+}
+
+
+@media only screen and (max-width: 750px){
+
+    .menuOptions{
+        padding-left: 105px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .placeholderStudies{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 580px){
+
+    .introduction{
+        position: sticky;
+        left: 17%;
+        line-height: 2;
+        margin-top: -500px;
+        margin-left: 30px;
+        margin-right: 2%;
+    }
+
+    .menuOptions{
+        padding-left: 75px;
+    }
+}
+
+
+
+@media only screen and (max-width: 550px){
+
+    .studies .studiesName{
+        margin: 0;
+        position: relative; 
+    }
+
+    li a{
+        font-size: 24pt;
+    }
+
+    .introduction{
+        position: sticky;
+        left: 17%;
+        line-height: 2;
+        margin-top: -520px;
+        margin-left: 40px;
+        margin-right: 2%;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+
+    .placeholderStudies{
+        width: 350px;
+        height: 175px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+
+    .navigationButtons{
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    li a{
+        font-size: 18pt;
+    }
+
+
+    .introduction{
+        position: sticky;
+        left: 17%;
+        line-height: 2;
+        margin-top: -540px;
+        margin-left: 25px;
+        margin-right: 2%;
+    }
+
+    .heading1{
+        font-size: 22pt;
+    }
+
+    .introductionParagraph{
+        color: white;
+        font-size: 18pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menuOptions{
+        padding-left: 50px;
+    }
+
+    .studyContainer{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .placeholderStudies{
+        width: 250px;
+        height: 125px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+
+    .heading1{
+        font-size: 18pt;
+    }
+
+    .introductionParagraph{
+        color: white;
+        font-size: 14pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menuOptions{
+        padding-left: 40px;
+    }
+
+    .heading3{
+        font-size: 18pt;
+    }
+
+    .paragraph{
+        font-size: 12pt;
+    }
+}
+
