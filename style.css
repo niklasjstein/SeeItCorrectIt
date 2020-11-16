@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Her er NAV-baren */
 
 .navbar{   
-    position: sticky;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,6 +23,7 @@
     opacity: 100%;
     top: 0;
     z-index: 999;
+    scroll-behavior: smooth;
 }
 
 .logo{
@@ -32,11 +35,14 @@
     display: flex;
     justify-content: space-around;
     width: 60%;
+    
 }
 
 .navigationButtons a{
     text-decoration: none;
     color: black;
+    transition: 0.8s;
+    
 }
 
 li a{
@@ -57,10 +63,11 @@ li a{
 /* Her kommer informasjonen om skolen + et bakgrunnsbilde */
 
 .container{
-    min-height: 610px;
+    min-height: 710px;
 }
 
 .background{
+    margin-top: 90px;
     width: 100%;
     opacity: 100%;
     filter: blur(4px);
@@ -94,6 +101,7 @@ li a{
 
 /* Her kommer listen over studiene */
 .heading2{
+    margin-top: 90px;
     color: black    ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32pt;
@@ -113,6 +121,10 @@ li a{
     width: auto;
     flex-wrap: wrap;
     margin-bottom: 5%;
+}
+
+.studiesName:hover{
+    text-decoration: underline;
 }
 
 .studies a{
@@ -205,11 +217,14 @@ ul li:hover{
 }
 
 .heading3{
+    margin-top: 150px;
+    margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22pt;
 }
 
 .paragraph{
+    margin-top: 90px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14pt;
 }
@@ -279,12 +294,16 @@ ul li:hover{
 
 @media only screen and (max-width: 750px){
 
+   
+
     .menuOptions{
         padding-left: 105px;
     }
 }
 
 @media only screen and (max-width: 700px){
+
+   
 
     .placeholderStudies{
         width: 400px;
@@ -294,6 +313,7 @@ ul li:hover{
 
 @media only screen and (max-width: 580px){
 
+   
     .introduction{
         position: sticky;
         left: 17%;
@@ -311,6 +331,11 @@ ul li:hover{
 
 
 @media only screen and (max-width: 550px){
+
+    .heading2{
+        margin-bottom: 110px;
+    }
+
 
     .studies .studiesName{
         margin: 0;
